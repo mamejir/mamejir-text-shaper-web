@@ -23,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8jju4a975di#ob(6bfvl_309jdo*gy!^1b#ng_sprz@cfz@7@i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '.pythonanywhere.com', 'mamejir.pythonanywhere.com']
 
@@ -122,6 +123,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+from django.core.management.utils import get_random_secret_key
+SECRET_KEY = get_random_secret_key()  
+
 
 
 DEPLOY = True
