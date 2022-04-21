@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <p>{{ instructions }}</p>
+    <p>{{ instructions2 }}</p>
+    <br>
+    <p>{{ answer }}</p>
+    <br>
+    <p>{{ shaped }}</p>
+    <br>
+    <form action="{% url 'index' %}" method="post">
+        {% csrf_token %}
+        {{ forms }}
+        <br>
+        <input type='submit' name='button_2' value="クリア">
+        <input type='submit' name='button_1' value="英文整形">
+</body>
+</html>
