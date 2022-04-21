@@ -125,12 +125,9 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> parent of def3c45 (commit202204212252)
 DEPLOY = True
 if DEPLOY:
     # SECURE_HSTS_SECONDS = 60 # 無知にいじると危険なのでコメントアウト
